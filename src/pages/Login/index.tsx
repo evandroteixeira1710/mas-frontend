@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "../../components/Button";
-import { Content } from "../../components/Header/styles";
-import { Background, Container, FormContainer, InputContainer } from "./styles";
+
+import { Background,Content, Container, FormContainer, InputContainer } from "./styles";
 import {FiLogIn,FiMail, FiLock} from 'react-icons/fi'
 
 export function Login(){

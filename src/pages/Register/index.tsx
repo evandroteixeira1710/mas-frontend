@@ -1,7 +1,8 @@
 import { FiUser, FiMail, FiLock, FiArrowLeft} from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/Button";
-import { Container, Content, FormContainer, InputContainer, Background } from "./styles";
+import { Container,Content, FormContainer, InputContainer, Background } from "./styles";
+
 
 export function Register(){
     return(

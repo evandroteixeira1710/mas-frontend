@@ -11,13 +11,11 @@ export const Content = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
     h1 {
         color: var(--greenDark);
         font-weight: bold;
         font-style: italic;
     }
-    
     div {
         
         button {
@@ -28,9 +26,7 @@ export const Content = styled.div`
         padding: 0 2rem;
         border-radius: 0.25rem;
         height: 3rem;
-        
         transition: filter 0.2s;
-        
         &:hover {
             filter: brightness(0.8);
         }
@@ -38,6 +34,6 @@ export const Content = styled.div`
         & + button {
             margin-left: 10px;
         }
-      }
+        }
     }
 `;
