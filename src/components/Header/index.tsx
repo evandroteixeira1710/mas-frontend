@@ -1,6 +1,6 @@
-import { Button } from "../Button";
-import { Container } from "../Button/styles";
-import { Content } from "./styles";
+
+
+import { Content,Container } from "./styles";
 
 
 export function Header(){
@@ -9,14 +9,15 @@ export function Header(){
             <Content>
                 <h1>My Atcivies Space</h1>
                 <div>
-                    <Button type="button">
+                    <button type="button">
                         Nova Unidade Curricular
-                    </Button>
-                    <Button type="button">
+                    </button>
+                    <button type="button">
                         Nova Atividade
-                    </Button>
+                    </button>
                 </div>
             </Content>
         </Container>
     )
 }
+/*Correcao Imports*/

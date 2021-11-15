@@ -1,4 +1,4 @@
-import { Container } from "../Button/styles";
+import { Container } from "./styles";
 
 
 export function ActivyTable(){
