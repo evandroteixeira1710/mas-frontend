@@ -36,7 +36,8 @@ export function AuthProvider({children}:AuthProviderProps) {
         const user = localStorage.getItem('MAS:user');
 
         if(token && user) {
-            api.defaults.headers.authorization = `Bearer ${token}`;
+            api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+            /*api.defaults.headers.authorization = `Bearer ${token}`;*/
             return {token, user: JSON.parse(user)}
         }
 
@@ -55,7 +56,8 @@ export function AuthProvider({children}:AuthProviderProps) {
         localStorage.setItem('MAS:token', token);
         localStorage.setItem('MAS:user', JSON.stringify(user));
 
-        api.defaults.headers.authorization = `Bearer ${token}`;
+        api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+        /*api.defaults.headers.authorization = `Bearer ${token}`;*/
 
         setData({token, user});
 
